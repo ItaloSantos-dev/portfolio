@@ -4,8 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    
+    <main class="container">
+        <section>
+            <div>
+                "Foto de perfil"
+            </div>
+           <div>
+                <h1 class="text-4xl font-bold mb-4">Olá, sou Italo Santos</h1>
+                <p class="text-lg mb-6">Estudante de ADS na UNIFACEMA e desenvolvedor fullstack, focado em Java com Spring Boot e TS com Angular.
+                </p>
+                <button type="button">Baixar currículo</button>
+           </div>
+
+           <div>
+                <ul>
+                    <li><i class="devicon-typescript-plain"></i></li>
+                    <li><i class="devicon-angular-plain"></i></li>
+                    <li><i class="devicon-tailwindcss-plain"></i></li>
+                    <li><i class="devicon-java-plain"></i></li>
+                    <li><i class="devicon-spring-plain"></i></li>
+                    <li><i class="devicon-postgres-plain"></i></li>
+                    <li><i class="devicon-docker-plain"></i></li>
+                </ul>
+           </div>
+        </section>
+
+        <section>
+            <div>
+                <h1>Sobre mim</h1>
+            </div>
+            <div>
+                <p>
+                    Me interessei por tecnologia ainda novo, mas só fui realmente me aprofundar na programação em 2024, entrei na faculdade em 2025 pelo PROUNI e desde lá uso a programação para criar soluções e dar vida a lógica, não focando somente em fazer funcionar mas também em fazer um código limpo e escalável. Atualmente estou no 3º período de Análise e desenvolvimento de sistemas, desenvolvo projetos próprios sempre buscando aprender e aperfeiçoar meus conhecimentos. Busco minha prmeira vaga no mercado de trabalho, onde possa aplicar meus conhecimentos e crescer profissionalmente, 
+                </p>
+            </div>
+            <div>
+                <h1>Habilidades</h1>
+                <div>
+                    Backend: Java, Maven, Spring Boot
+                </div>
+                <div>
+                    Frontend: Typescript, Angular, Tailwind CSS
+                </div>
+                <div>
+                    Banco de dados: Postgres, Mysql, Redis
+                </div>
+                <div>
+                    DevOps: Docker, Git
+                </div>
+                <div>
+                    Conceitos: Clean code, POO, MVC, layered architecture, REST
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h1>Meus principais projetos</h1>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <h2>Projeta Dev</h2>
+                        <p>Uma aplicação que fornece ideias de prjetos e possibilita a colaboração entre programadores para criar uma aplicação.</p>
+                    </div>
+
+                    <div>
+                        <h2>O que soluciona</h2>
+                        <p>Esta aplicação soluciona o problema de programadores que não conseguem pensar em uma ideia do que criar, no projeta dev o usuário tem acesso as últimas ideias de PITCHS vindas do tab news e os possibilita criar sua aplicação com outros programadores, podendo dar um cargo a cada membro do projeto. A aplicação ainda conta com sistema de follow entre usuários, criação de habilidades com ícones para seu perfil entre outras coisas.</p>
+                    </div>
+
+                    <div>
+                        <h2>Conhecimentos aplicados</h2>
+                        <p>POO, validação com token JWT, MVC, layered architecture, SQL, migrations, rotas orientadas ao usuário, dockerização da aplicação, incluindo back, front e bd, consumo de API.</p>
+                    </div>
+
+                    <div>
+                        <button type="button">
+                            Ver fotos
+                        </button>
+                        <button type="button">
+                            Ver código
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h2>Copia vídeo</h2>
+                        <p>Uma aplicação que permite ao usuário criar ideias sobre qualquer coisa, com base em vídeos do youtube.</p>
+                    </div>
+
+                    <div>
+                        <h2>O que soluciona</h2>
+                        <p>Esta aplicação soluciona o problema de pessoas que querem criar qualquer tipo de conteúdo e não possuem ideia do que criar, a aplicação usa a API do yt para fornecer os vídeos com mais visualizações sobre um tema que o usuário escolher pesquisar, podendo dar nome, descrição, criar um desenho para melhor entendimento e podendo exportar para PDF
+                        ps. A aplicação também teria ma feature de usar IA para pedir um roteiro de algo que a pessoa escolhesse, como, aula, vídeos, palestras, ETC.</p>
+                    </div>
+
+                    <div>
+                        <h2>Conhecimentos aplicados</h2>
+                        <p>POO, MVC, layered architecture, SQL, migrations, dockerização da aplicação, incluindo back, front e bd, banco de dados não relacioinal Redis, criação de relatório para admin da aplicação, separação de rotas por autoridade, consumo de API.</p>
+                    </div>
+
+                    <div>
+                        <button type="button">
+                            Ver fotos
+                        </button>
+                        <button type="button">
+                            Ver código
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <div>
+                        <h2>Valorize</h2>
+                        <p>Uma API que usa API´s públicas do governo para calcular rendimento de um investimento, aidna possibilitando escolher a moeda de entrada e a moeda de saída.</p>
+                    </div>
+
+                    <div>
+                        <h2>O que soluciona</h2>
+                        <p>Esta é uma simples API mas que com um front end poderia facilmente ser microsaas, a ideia é poupar tempo do usuário, imagine que ele planeja fazer uma viagem para o exterior e quer saber o quanto de investimento em dólar no Brasil ele tem que fazer para conseguir a quantidade necessária para levar na viagem, a valorize seria uma mão na roda para esse usuário pois manualmente ele teria que, buscar cotação das moedas escolhidas, pegar a cotação correta para conversão, saber a taxa atual do investimento escolhido e calcular usando a fórmula de juros composto, todo esse trabalho a valorize poupa para o usuário.
+                        ps. Atualmente a aplicação está instável pois as API´s públicas do governo estão com problemas.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Conhecimentos aplicados</h2>
+                        <p>POO, MVC, layered architecture, SQL, migrations, dockerização da aplicação, consumo de API´s externas, Lógica pura para cálculo de juros compostos</p>
+                    </div>
+
+                    <div>
+                        <button type="button">
+                            Ver fotos
+                        </button>
+                        <button type="button">
+                            Ver código
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h1>Formação</h1>
+            <div>
+                <h2>UNIFACEMA</h2>
+                <p>Análise e desenvolvimento de sistemas - 2025 - 2027(PREV)</p>
+        </section>
+
+        <section>
+            <h1>Contatos</h1>
+            <a href="https://wa.me/SEUNUMERO" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/SEUUSUARIO" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:seuemail@email.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/SEUUSUARIO" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </section>
+    </main>
 </body>
 </html>
