@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth scroll-pt-[20vh]" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,179 +9,279 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <main class="container">
-        <section>
-            <div>
-                "Foto de perfil"
+    <header class="mx-auto sticky top-0 bg-gray-500/50 backdrop-blur-50 z-50 shadow">
+            <nav class=" p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a href="#" class="text-2xl font-bold">Italo Santos</a>
+                    <ul class="flex gap-4 decoration-none ">
+                        <li><a href="#inicio" class="">inicio</a></li>
+                        <li><a href="#sobre-mim" class="">Sobre mim</a></li>
+                        <li><a href="#projetos" class="">Projetos</a></li>
+                        <li><a href="#formacao" class="">Formação</a></li>
+                        <li><a href="#contatos" class="">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main class="container font-bold mx-auto px-4 py-6 flex flex-col gap-[20vh]">
+
+
+
+        <section id="inicio" class=" scroll-mt-[20vh]  transition-all duration-700 ease-out scroll-anim border shadow p-2 my-[10vh] flex flex-col gap-[10vh]  border-black">
+            <div class="mb-8 relative inline-block text-center flex flex-col  justify-center" data-aos="zoom-in">
+                <img src="images/perfil/IMG_20250829_200516.jpg.jpeg" alt="Italo Santos" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary object-cover shadow-2xl mx-auto hover:scale-105 transition duration-500">
             </div>
-           <div>
+           <div class="text-center flex flex-col items-center justify-center">
                 <h1 class="text-4xl font-bold mb-4">Olá, sou Italo Santos</h1>
                 <p class="text-lg mb-6">Estudante de ADS na UNIFACEMA e desenvolvedor fullstack, focado em Java com Spring Boot e TS com Angular.
                 </p>
-                <button type="button">Baixar currículo</button>
+                <button class="mt-110" type="button">Baixar currículo</button>
            </div>
 
-           <div>
-                <ul>
-                    <li><i class="devicon-typescript-plain"></i></li>
-                    <li><i class="devicon-angular-plain"></i></li>
-                    <li><i class="devicon-tailwindcss-plain"></i></li>
-                    <li><i class="devicon-java-plain"></i></li>
-                    <li><i class="devicon-spring-plain"></i></li>
-                    <li><i class="devicon-postgres-plain"></i></li>
-                    <li><i class="devicon-docker-plain"></i></li>
+           <div >
+                <ul class="text-center flex items-center justify-center gap-5">
+                    <li><i class="devicon-typescript-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-angular-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-tailwindcss-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-java-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-spring-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-postgres-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-docker-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                    <li><i class="devicon-postgresql-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
                 </ul>
            </div>
         </section>
 
-        <section>
-            <div>
-                <h1>Sobre mim</h1>
-            </div>
-            <div>
-                <p>
-                    Me interessei por tecnologia ainda novo, mas só fui realmente me aprofundar na programação em 2024, entrei na faculdade em 2025 pelo PROUNI e desde lá uso a programação para criar soluções e dar vida a lógica, não focando somente em fazer funcionar mas também em fazer um código limpo e escalável. Atualmente estou no 3º período de Análise e desenvolvimento de sistemas, desenvolvo projetos próprios sempre buscando aprender e aperfeiçoar meus conhecimentos. Busco minha prmeira vaga no mercado de trabalho, onde possa aplicar meus conhecimentos e crescer profissionalmente, 
-                </p>
-            </div>
-            <div>
-                <h1>Habilidades</h1>
-                <div>
-                    Backend: Java, Maven, Spring Boot
+        <section id="sobre-mim" class="-scroll-mt-10 text-center border shadow  px-4 py-6 flex flex-col gap-[6vh] border-black" >
+            <div class="flex justify-between">
+                <div class=" w-[20vw]">
+                    <div>
+                        <h1 class="text-2xl font-bold ">Sobre mim</h1>
+                    </div>
+                    <p>
+                        Me interessei por tecnologia ainda novo, mas só fui realmente me aprofundar na programação em 2024, entrei na faculdade em 2025 pelo PROUNI e desde lá uso a programação para criar soluções e dar vida a lógica, não focando somente em fazer funcionar mas também em fazer um código limpo e escalável. Atualmente estou no 3º período de Análise e desenvolvimento de sistemas, desenvolvo projetos próprios sempre buscando expandir e aperfeiçoar meus conhecimentos. Busco minha prmeira vaga no mercado de trabalho, onde possa aplicar meus conhecimentos e crescer profissionalmente. 
+                    </p>
                 </div>
-                <div>
-                    Frontend: Typescript, Angular, Tailwind CSS
-                </div>
-                <div>
-                    Banco de dados: Postgres, Mysql, Redis
-                </div>
-                <div>
-                    DevOps: Docker, Git
-                </div>
-                <div>
-                    Conceitos: Clean code, POO, MVC, layered architecture, REST
+                <div class="text-center flex flex-col items-center gap-[5vh] rounded p-2">
+                    <div class="border border-black rounded-2xl w-[20vh]  flex items-center justify-center">
+                        <h1>Habilidades</h1>
+                    </div>
+
+                    <div class=" justify-between items-center  flex flex-col gap-[6vh]">
+                        <div class="grid grid-cols-2 gap-[6vh]">
+
+                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
+                                <p>
+                                    <i class="fa-solid group-hover:text-red-600 fa-circle text-red-400" ></i> 
+                                    Backend:
+                                </p>
+
+                                <p>Java, Maven, Spring Boot</p>
+                            </div>
+
+                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
+                                <p>
+                                    <i class="fa-solid group-hover:text-blue-600 fa-circle text-blue-400" ></i> 
+                                    Frontend:
+                                </p>
+                                <p>Typescript, Angular, Tailwind CSS</p>
+                            </div>
+
+                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
+                                <p>
+                                    <i class="fa-solid group-hover:text-green-600 fa-circle text-green-400" ></i> 
+                                    Banco de dados:
+                                </p>
+                                <p>Postgres, Mysql, Redis</p>
+                            </div>
+
+                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
+                                <p>
+                                    <i class="fa-solid  group-hover:text-gray-600 fa-circle text-gray-400" ></i> 
+                                    DevOps:
+                                </p>
+                                <p>Docker, Git</p>
+                            </div>
+                        </div>
+
+                        <div class="text-start group container w-[45vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
+                            <p>
+                                <i class="fa-solid group-hover:text-orange-600 fa-circle text-orange-400" ></i> 
+                                Conceitos:
+                            </p>
+                            <p>Clean code, POO, MVC, layered architecture, REST</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h1>Meus principais projetos</h1>
+        <section id="projetos" class="scroll-mt-[5vh] px-4 py-12 max-w-7xl mx-auto flex flex-col gap-12">
+
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900">Meus principais projetos</h1>
+                <p class="text-gray-600 mt-2 text-lg">Um pouco do meu trabalho e das tecnologias que utilizo.</p>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <h2>Projeta Dev</h2>
-                        <p>Uma aplicação que fornece ideias de prjetos e possibilita a colaboração entre programadores para criar uma aplicação.</p>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <div>
-                        <h2>O que soluciona</h2>
-                        <p>Esta aplicação soluciona o problema de programadores que não conseguem pensar em uma ideia do que criar, no projeta dev o usuário tem acesso as últimas ideias de PITCHS vindas do tab news e os possibilita criar sua aplicação com outros programadores, podendo dar um cargo a cada membro do projeto. A aplicação ainda conta com sistema de follow entre usuários, criação de habilidades com ícones para seu perfil entre outras coisas.</p>
-                    </div>
-
-                    <div>
-                        <h2>Conhecimentos aplicados</h2>
-                        <p>POO, validação com token JWT, MVC, layered architecture, SQL, migrations, rotas orientadas ao usuário, dockerização da aplicação, incluindo back, front e bd, consumo de API.</p>
-                    </div>
-
-                    <div>
-                        <button type="button">
-                            Ver fotos
-                        </button>
-                        <button type="button">
-                            Ver código
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <h2>Copia vídeo</h2>
-                        <p>Uma aplicação que permite ao usuário criar ideias sobre qualquer coisa, com base em vídeos do youtube.</p>
-                    </div>
-
-                    <div>
-                        <h2>O que soluciona</h2>
-                        <p>Esta aplicação soluciona o problema de pessoas que querem criar qualquer tipo de conteúdo e não possuem ideia do que criar, a aplicação usa a API do yt para fornecer os vídeos com mais visualizações sobre um tema que o usuário escolher pesquisar, podendo dar nome, descrição, criar um desenho para melhor entendimento e podendo exportar para PDF
-                        ps. A aplicação também teria ma feature de usar IA para pedir um roteiro de algo que a pessoa escolhesse, como, aula, vídeos, palestras, ETC.</p>
-                    </div>
-
-                    <div>
-                        <h2>Conhecimentos aplicados</h2>
-                        <p>POO, MVC, layered architecture, SQL, migrations, dockerização da aplicação, incluindo back, front e bd, banco de dados não relacioinal Redis, criação de relatório para admin da aplicação, separação de rotas por autoridade, consumo de API.</p>
-                    </div>
-
-                    <div>
-                        <button type="button">
-                            Ver fotos
-                        </button>
-                        <button type="button">
-                            Ver código
-                        </button>
-                    </div>
+                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                     
-                </div>
-
-                <div>
-                    <div>
-                        <h2>Valorize</h2>
-                        <p>Uma API que usa API´s públicas do governo para calcular rendimento de um investimento, aidna possibilitando escolher a moeda de entrada e a moeda de saída.</p>
-                    </div>
-
-                    <div>
-                        <h2>O que soluciona</h2>
-                        <p>Esta é uma simples API mas que com um front end poderia facilmente ser microsaas, a ideia é poupar tempo do usuário, imagine que ele planeja fazer uma viagem para o exterior e quer saber o quanto de investimento em dólar no Brasil ele tem que fazer para conseguir a quantidade necessária para levar na viagem, a valorize seria uma mão na roda para esse usuário pois manualmente ele teria que, buscar cotação das moedas escolhidas, pegar a cotação correta para conversão, saber a taxa atual do investimento escolhido e calcular usando a fórmula de juros composto, todo esse trabalho a valorize poupa para o usuário.
-                        ps. Atualmente a aplicação está instável pois as API´s públicas do governo estão com problemas.
+                    <div class="flex-1 flex flex-col gap-3">
+                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Projeta Dev</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Uma aplicação que fornece ideias de projetos, vindas da API do Tab News, e possibilita a colaboração entre programadores para criar uma aplicação.
                         </p>
                     </div>
 
-                    <div>
-                        <h2>Conhecimentos aplicados</h2>
-                        <p>POO, MVC, layered architecture, SQL, migrations, dockerização da aplicação, consumo de API´s externas, Lógica pura para cálculo de juros compostos</p>
+                    <div class="flex flex-wrap gap-2 justify-start items-center">
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">ANGULAR</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">TAILWIND</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">POSTGRES</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
                     </div>
 
-                    <div>
-                        <button type="button">
-                            Ver fotos
-                        </button>
-                        <button type="button">
-                            Ver código
-                        </button>
+                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                        Ver mais
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    
+                    <div class="flex-1 flex flex-col gap-3">
+                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Copia vídeo</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Uma aplicação que permite ao usuário criar ideias sobre qualquer coisa. Ela consome a API do YouTube para fornecer os vídeos mais assistidos sobre o tema escolhido.
+                        </p>
                     </div>
+
+                    <div class="flex flex-wrap gap-2 justify-start items-center">
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">ANGULAR</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">TAILWIND</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">POSTGRES</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">REDIS</span>
+                    </div>
+
+                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                        Ver mais
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    
+                    <div class="flex-1 flex flex-col gap-3">
+                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Valorize</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Uma API que usa APIs públicas do governo para calcular o rendimento de um investimento, ainda possibilitando escolher a moeda de entrada e saída.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 justify-start items-center">
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
+                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">API</span>
+                    </div>
+
+                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                        Ver mais
+                    </button>
                 </div>
 
             </div>
         </section>
 
-        <section>
-            <h1>Formação</h1>
-            <div>
-                <h2>UNIFACEMA</h2>
-                <p>Análise e desenvolvimento de sistemas - 2025 - 2027(PREV)</p>
+        <section id="formacao" class="scroll-mt-[10vh] px-4 py-12 max-w-7xl mx-auto flex flex-col gap-8">
+    
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900">Formação Acadêmica</h1>
+                <p class="text-gray-600 mt-2 text-lg">Minha base teórica e jornada de aprendizado.</p>
+            </div>
+
+            <div class="flex justify-center">
+                
+                <div class="w-full max-w-3xl flex flex-col gap-4 border-2 border-black shadow-xl bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl relative overflow-hidden">
+                    
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-cyan-500"></div>
+
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pl-4 sm:pl-6">
+                        <div>
+                            <div class="flex items-center">
+                                <h2 class="text-2xl font-bold text-gray-900">UNIFACEMA</h2>
+
+                                <div class="pl-4 sm:pl-6 mt-4 flex items-center gap-2 text-gray-500 text-sm font-semibold">
+                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                CAXIAS | MA
+                                </div>
+                            </div>
+                            <p class="text-lg font-semibold text-cyan-700">Análise e Desenvolvimento de Sistemas</p>
+                            
+                        </div>
+                        <div class="bg-black text-white px-4 py-1.5 rounded-full text-sm font-bold whitespace-nowrap shadow-sm">
+                            2025 - 2027 (Previsto)
+                        </div>
+                    </div>
+
+                    <div class="pl-4 sm:pl-6 mt-2">
+                        <p class="text-gray-700 leading-relaxed text-justify">
+                            Formação voltada para a construção de uma base sólida em lógica de programação, banco de dados, OOP e arquitetura de sistemas. Durante a graduação, tenho aplicado os conhecimentos acadêmicos diretamente na criação de projetos próprios, aprimorando continuamente minhas habilidades no desenvolvimento full-stack com o ecossistema <strong>Java</strong> e <strong>Angular</strong>.
+                        </p>
+                    </div>
+
+                   
+
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h1>Contatos</h1>
-            <a href="https://wa.me/SEUNUMERO" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+        <section id="contatos" class="scroll-mt-[20vh] px-4 py-16 max-w-7xl mx-auto">
+            <div class="border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white rounded-2xl p-8">
+                
+                <div class="text-center mb-10">
+                    <h1 class="text-4xl font-bold text-gray-900">Meus contatos</h1>
+                </div>
 
-            <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/SEUUSUARIO" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    
+                    <a href="https://www.linkedin.com/in/italosantos-dev" target="_blank" 
+                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-300 group">
+                        <i class="fa-brands fa-linkedin text-4xl group-hover:text-blue-600"></i>
+                        <span class="font-bold text-sm uppercase tracking-wider">LinkedIn</span>
+                    </a>
 
-            <!-- Email -->
-            <a href="mailto:seuemail@email.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
+                    <a href="https://github.com/italosantos-dev" target="_blank" 
+                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300 group">
+                        <i class="fa-brands fa-github text-4xl group-hover:text-gray-700"></i>
+                        <span class="font-bold text-sm uppercase tracking-wider">GitHub</span>
+                    </a>
 
-            <!-- GitHub -->
-            <a href="https://github.com/SEUUSUARIO" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
+                    <a href="https://wa.me/99981587631" target="_blank" 
+                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-green-50 hover:-translate-y-1 transition-all duration-300 group">
+                        <i class="fa-brands fa-whatsapp text-4xl group-hover:text-green-500"></i>
+                        <span class="font-bold text-sm uppercase tracking-wider">WhatsApp</span>
+                    </a>
+
+                    <a href="mailto:italosantoscont@gmail.com" 
+                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-cyan-50 hover:-translate-y-1 transition-all duration-300 group">
+                        <i class="fa-solid fa-envelope text-4xl group-hover:text-cyan-600"></i>
+                        <span class="font-bold text-sm uppercase tracking-wider">E-mail</span>
+                    </a>
+
+                </div>
+
+                <div class="mt-12 text-center border-t-2 border-gray-100 pt-8">
+                    <p class="text-sm text-gray-500 font-medium italic">
+                        “Focado em entregar soluções robustas com Java & Angular.”
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
+
 </body>
 </html>
