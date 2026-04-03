@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    background-attachment: fixed;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}

@@ -4,284 +4,390 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
 </head>
 <body>
-    <header class="mx-auto sticky top-0 bg-gray-500/50 backdrop-blur-50 z-50 shadow">
-            <nav class=" p-4">
-                <div class="container mx-auto flex justify-between items-center">
-                    <a href="#" class="text-2xl font-bold">Italo Santos</a>
-                    <ul class="flex gap-4 decoration-none ">
-                        <li><a href="#inicio" class="">inicio</a></li>
-                        <li><a href="#sobre-mim" class="">Sobre mim</a></li>
-                        <li><a href="#projetos" class="">Projetos</a></li>
-                        <li><a href="#formacao" class="">Formação</a></li>
-                        <li><a href="#contatos" class="">Contatos</a></li>
-                    </ul>
-                </div>
-            </nav>
-    </header>
-    <main class="container font-bold mx-auto px-4 py-6 flex flex-col gap-[20vh]">
 
+    
+    <header class="sticky top-0 z-50 w-full bg-slate-900/60 backdrop-blur-md border-b border-slate-700/50 shadow-lg">
+        <nav class="px-6 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white tracking-wide hover:opacity-80 transition-opacity">
+                    Italo<span class="text-cyan-400">.</span>Santos
+                </a>
 
-
-        <section id="inicio" class=" scroll-mt-[20vh]  transition-all duration-700 ease-out scroll-anim border shadow p-2 my-[10vh] flex flex-col gap-[10vh]  border-black">
-            <div class="mb-8 relative inline-block text-center flex flex-col  justify-center" data-aos="zoom-in">
-                <img src="images/perfil/IMG_20250829_200516.jpg.jpeg" alt="Italo Santos" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary object-cover shadow-2xl mx-auto hover:scale-105 transition duration-500">
-            </div>
-           <div class="text-center flex flex-col items-center justify-center">
-                <h1 class="text-4xl font-bold mb-4">Olá, sou Italo Santos</h1>
-                <p class="text-lg mb-6">Estudante de ADS na UNIFACEMA e desenvolvedor fullstack, focado em Java com Spring Boot e TS com Angular.
-                </p>
-                <button class="mt-110" type="button">Baixar currículo</button>
-           </div>
-
-           <div >
-                <ul class="text-center flex items-center justify-center gap-5">
-                    <li><i class="devicon-typescript-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-angular-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-tailwindcss-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-java-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-spring-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-postgres-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-docker-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
-                    <li><i class="devicon-postgresql-plain text-5xl inline-block transform hover:scale-110 transition-all"></i></li>
+                <ul class="flex items-center gap-8">
+                    <li>
+                        <a href="#inicio" class="text-slate-300 text-sm font-medium hover:text-cyan-400 transition-colors duration-300">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre-mim" class="text-slate-300 text-sm font-medium hover:text-cyan-400 transition-colors duration-300">
+                            Sobre mim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projetos" class="text-slate-300 text-sm font-medium hover:text-cyan-400 transition-colors duration-300">
+                            Projetos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#formacao" class="text-slate-300 text-sm font-medium hover:text-cyan-400 transition-colors duration-300">
+                            Formação
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contatos" class="px-5 py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/50 text-sm font-semibold hover:bg-cyan-500 hover:text-slate-900 transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                            Contatos
+                        </a>
+                    </li>
                 </ul>
-           </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mx-auto px-4 py-6 flex flex-col gap-[15vh]">
+
+        
+
+        <section id="inicio" class="scroll-mt-[20vh] transition-all duration-700 ease-out p-3 my-[10vh] flex flex-col gap-[8vh]">
+            <div class="relative inline-block text-center flex flex-col justify-center" data-aos="zoom-in">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-cyan-500/30 blur-[50px] rounded-full -z-10"></div>
+                <img src="images/perfil/IMG_20250829_200516.jpg.jpeg" alt="Italo Santos" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-cyan-400/50 object-cover shadow-[0_0_30px_rgba(34,211,238,0.2)] mx-auto hover:scale-105 hover:border-cyan-400 transition-all duration-500">
+            </div>
+            
+            <div class="text-center flex flex-col items-center justify-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-tight">Olá, sou <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Italo Santos</span></h1>
+                <p class="text-lg md:text-xl mb-8 text-slate-300 max-w-2xl leading-relaxed">
+                    Estudante de ADS na UNIFACEMA e desenvolvedor Fullstack, focado em <span class="text-cyan-400 font-semibold">Java com Spring Boot</span> e <span class="text-cyan-400 font-semibold">TS com Angular</span>.
+                </p>
+                <button type="button" class="px-8 py-3 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/50 font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_25px_rgba(34,211,238,0.4)]">
+                    Baixar currículo
+                </button>
+            </div>
+
+            <div class="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl py-6 px-4 max-w-4xl mx-auto shadow-lg">
+                <ul class="text-center flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                    <li><i class="devicon-typescript-plain text-5xl text-slate-400 hover:text-blue-500 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-angular-plain text-5xl text-slate-400 hover:text-red-500 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-tailwindcss-plain text-5xl text-slate-400 hover:text-cyan-400 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-java-plain text-5xl text-slate-400 hover:text-orange-500 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-spring-plain text-5xl text-slate-400 hover:text-green-500 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-postgresql-plain text-5xl text-slate-400 hover:text-blue-400 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                    <li><i class="devicon-docker-plain text-5xl text-slate-400 hover:text-blue-500 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300"></i></li>
+                </ul>
+            </div>
         </section>
 
-        <section id="sobre-mim" class="-scroll-mt-10 text-center border shadow  px-4 py-6 flex flex-col gap-[6vh] border-black" >
-            <div class="flex justify-between">
-                <div class=" w-[20vw]">
-                    <div>
-                        <h1 class="text-2xl font-bold ">Sobre mim</h1>
-                    </div>
-                    <p>
-                        Me interessei por tecnologia ainda novo, mas só fui realmente me aprofundar na programação em 2024, entrei na faculdade em 2025 pelo PROUNI e desde lá uso a programação para criar soluções e dar vida a lógica, não focando somente em fazer funcionar mas também em fazer um código limpo e escalável. Atualmente estou no 3º período de Análise e desenvolvimento de sistemas, desenvolvo projetos próprios sempre buscando expandir e aperfeiçoar meus conhecimentos. Busco minha prmeira vaga no mercado de trabalho, onde possa aplicar meus conhecimentos e crescer profissionalmente. 
-                    </p>
+        <section id="sobre-mim" class="scroll-mt-[10vh] max-w-7xl mx-auto bg-slate-800/40 backdrop-blur-md border border-slate-700/50 shadow-2xl rounded-3xl p-8 lg:p-12 flex flex-col lg:flex-row gap-12 items-center">
+            
+            <div class="lg:w-1/2 text-left">
+                <h1 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-cyan-500 rounded-full"></span>
+                    Sobre mim
+                </h1>
+                <p class="text-slate-300 leading-relaxed text-lg">
+                    Me interessei por tecnologia ainda novo, mas só fui realmente me aprofundar na programação em 2024. Entrei na faculdade em 2025 pelo PROUNI e desde lá uso a programação para criar soluções e dar vida à lógica, não focando somente em fazer funcionar, mas também em fazer um <strong class="text-cyan-400 font-medium">código limpo e escalável</strong>. 
+                    <br><br>
+                    Atualmente estou no 3º período de Análise e Desenvolvimento de Sistemas, desenvolvo projetos próprios sempre buscando expandir e aperfeiçoar meus conhecimentos. Busco minha primeira vaga no mercado de trabalho, onde possa aplicar meus conhecimentos e crescer profissionalmente.
+                </p>
+            </div>
+
+            <div class="lg:w-1/2 w-full flex flex-col gap-6">
+                <div class="inline-block border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 rounded-full px-6 py-2 w-fit mx-auto lg:mx-0 font-semibold text-sm tracking-wide">
+                    HABILIDADES
                 </div>
-                <div class="text-center flex flex-col items-center gap-[5vh] rounded p-2">
-                    <div class="border border-black rounded-2xl w-[20vh]  flex items-center justify-center">
-                        <h1>Habilidades</h1>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="group bg-slate-900/50 border border-slate-700/50 rounded-2xl p-5 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all duration-300 shadow-lg">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-server text-orange-400 group-hover:text-orange-500 transition-colors"></i> Backend
+                        </p>
+                        <p class="text-sm text-slate-400">Java, Maven, Spring Boot</p>
                     </div>
 
-                    <div class=" justify-between items-center  flex flex-col gap-[6vh]">
-                        <div class="grid grid-cols-2 gap-[6vh]">
+                    <div class="group bg-slate-900/50 border border-slate-700/50 rounded-2xl p-5 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all duration-300 shadow-lg">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-blue-400 group-hover:text-blue-500 transition-colors"></i> Frontend
+                        </p>
+                        <p class="text-sm text-slate-400">Typescript, Angular, Tailwind CSS</p>
+                    </div>
 
-                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
-                                <p>
-                                    <i class="fa-solid group-hover:text-red-600 fa-circle text-red-400" ></i> 
-                                    Backend:
-                                </p>
+                    <div class="group bg-slate-900/50 border border-slate-700/50 rounded-2xl p-5 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all duration-300 shadow-lg">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-database text-green-400 group-hover:text-green-500 transition-colors"></i> Banco de Dados
+                        </p>
+                        <p class="text-sm text-slate-400">PostgreSQL, MySQL, Redis</p>
+                    </div>
 
-                                <p>Java, Maven, Spring Boot</p>
-                            </div>
+                    <div class="group bg-slate-900/50 border border-slate-700/50 rounded-2xl p-5 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all duration-300 shadow-lg">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-infinity text-purple-400 group-hover:text-purple-500 transition-colors"></i> DevOps & Ferramentas
+                        </p>
+                        <p class="text-sm text-slate-400">Docker, Git</p>
+                    </div>
 
-                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
-                                <p>
-                                    <i class="fa-solid group-hover:text-blue-600 fa-circle text-blue-400" ></i> 
-                                    Frontend:
-                                </p>
-                                <p>Typescript, Angular, Tailwind CSS</p>
-                            </div>
-
-                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
-                                <p>
-                                    <i class="fa-solid group-hover:text-green-600 fa-circle text-green-400" ></i> 
-                                    Banco de dados:
-                                </p>
-                                <p>Postgres, Mysql, Redis</p>
-                            </div>
-
-                            <div class="text-start group container w-[35vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
-                                <p>
-                                    <i class="fa-solid  group-hover:text-gray-600 fa-circle text-gray-400" ></i> 
-                                    DevOps:
-                                </p>
-                                <p>Docker, Git</p>
-                            </div>
-                        </div>
-
-                        <div class="text-start group container w-[45vh] border shadow rounded-2xl border-black p-3 hover:scale-110 cursor-pointer transition-all">
-                            <p>
-                                <i class="fa-solid group-hover:text-orange-600 fa-circle text-orange-400" ></i> 
-                                Conceitos:
-                            </p>
-                            <p>Clean code, POO, MVC, layered architecture, REST</p>
-                        </div>
+                    <div class="group bg-slate-900/50 border border-slate-700/50 rounded-2xl p-5 sm:col-span-2 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all duration-300 shadow-lg">
+                        <p class="text-white font-semibold mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-yellow-400 group-hover:text-yellow-500 transition-colors"></i> Conceitos
+                        </p>
+                        <p class="text-sm text-slate-400">Clean Code, POO, MVC, Layered Architecture, REST</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="scroll-mt-[5vh] px-4 py-12 max-w-7xl mx-auto flex flex-col gap-12">
-
+        <section id="projetos" class="scroll-mt-[10vh] max-w-7xl mx-auto flex flex-col gap-12 w-full">
             <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-900">Meus principais projetos</h1>
-                <p class="text-gray-600 mt-2 text-lg">Um pouco do meu trabalho e das tecnologias que utilizo.</p>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Meus principais projetos</h1>
+                <p class="text-slate-400 mt-3 text-lg">Um pouco do meu trabalho e das tecnologias que utilizo.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    
+                <div class="flex flex-col gap-6 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 shadow-xl rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(34,211,238,0.1)] hover:border-cyan-500/30">
                     <div class="flex-1 flex flex-col gap-3">
-                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Projeta Dev</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h2 class="text-2xl font-bold text-white hover:text-cyan-400 transition-colors cursor-pointer w-fit">Projeta Dev</h2>
+                        <p class="text-slate-400 leading-relaxed text-sm">
                             Uma aplicação que fornece ideias de projetos, vindas da API do Tab News, e possibilita a colaboração entre programadores para criar uma aplicação.
                         </p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 justify-start items-center">
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">ANGULAR</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">TAILWIND</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">POSTGRES</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">SPRING</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">ANGULAR</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">TAILWIND</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">POSTGRES</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">DOCKER</span>
                     </div>
 
-                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                    <button onclick="escondeVerMais(true, 0)" type="button" class="w-full mt-2 bg-slate-700/50 border border-slate-600 text-white font-semibold py-3 rounded-xl hover:bg-cyan-500 hover:text-slate-900 hover:border-cyan-500 transition-all duration-300 active:scale-95">
                         Ver mais
                     </button>
                 </div>
 
-                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    
+                <div class="flex flex-col gap-6 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 shadow-xl rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(34,211,238,0.1)] hover:border-cyan-500/30">
                     <div class="flex-1 flex flex-col gap-3">
-                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Copia vídeo</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h2 class="text-2xl font-bold text-white hover:text-cyan-400 transition-colors cursor-pointer w-fit">Copia vídeo</h2>
+                        <p class="text-slate-400 leading-relaxed text-sm">
                             Uma aplicação que permite ao usuário criar ideias sobre qualquer coisa. Ela consome a API do YouTube para fornecer os vídeos mais assistidos sobre o tema escolhido.
                         </p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 justify-start items-center">
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">ANGULAR</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">TAILWIND</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">POSTGRES</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">REDIS</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">SPRING</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">ANGULAR</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">TAILWIND</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">POSTGRES</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">REDIS</span>
                     </div>
 
-                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                    <button onclick="escondeVerMais(true, 1)" type="button" class="w-full mt-2 bg-slate-700/50 border border-slate-600 text-white font-semibold py-3 rounded-xl hover:bg-cyan-500 hover:text-slate-900 hover:border-cyan-500 transition-all duration-300 active:scale-95">
                         Ver mais
                     </button>
                 </div>
 
-                <div class="flex flex-col gap-6 border-2 border-black shadow-xl bg-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                    
+                <div class="flex flex-col gap-6 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 shadow-xl rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(34,211,238,0.1)] hover:border-cyan-500/30">
                     <div class="flex-1 flex flex-col gap-3">
-                        <h2 class="text-2xl font-bold hover:text-cyan-600 transition-colors cursor-pointer w-fit">Valorize</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h2 class="text-2xl font-bold text-white hover:text-cyan-400 transition-colors cursor-pointer w-fit">Valorize</h2>
+                        <p class="text-slate-400 leading-relaxed text-sm">
                             Uma API que usa APIs públicas do governo para calcular o rendimento de um investimento, ainda possibilitando escolher a moeda de entrada e saída.
                         </p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 justify-start items-center">
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">SPRING</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">DOCKER</span>
-                        <span class="bg-cyan-100 text-cyan-800 px-3 py-1 text-xs rounded-full font-bold">API</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">SPRING</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">DOCKER</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1 text-xs rounded-full font-bold tracking-wide">API</span>
                     </div>
 
-                    <button type="button" class="w-full mt-2 bg-black text-white font-semibold py-3 rounded-xl hover:bg-gray-800 transition-colors active:scale-95">
+                    <button onclick="escondeVerMais(true, 2)" type="button" class="w-full mt-2 bg-slate-700/50 border border-slate-600 text-white font-semibold py-3 rounded-xl hover:bg-cyan-500 hover:text-slate-900 hover:border-cyan-500 transition-all duration-300 active:scale-95">
                         Ver mais
                     </button>
                 </div>
-
             </div>
+
+            <div id="vermais" class="fixed z-[100] inset-0 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    
+
+                <div id="verMaisImagemGrande" class="hidden flex items-center justify-center p-6 z-[200] h-screen w-screen fixed inset-0 bg-slate-950/80 backdrop-blur-sm">
+
+                    <div class="relative w-full max-w-[90vw] max-h-[90vh] overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-900/50 shadow-2xl group">
+
+                        <div id="image-track2" class="flex transition-transform duration-500 ease-out">
+                        </div>
+
+                        <button onclick="moveSlide2(-1)" 
+                            class="z-[200] absolute left-4 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-cyan-500 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 border border-slate-700">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <button onclick="moveSlide2(1)" 
+                            class="z-[200] absolute right-4 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-cyan-500 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 border border-slate-700">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <button onclick="verImagensGrande(false)" 
+                            class="absolute top-4 right-4 z-[300] bg-slate-800/60 hover:bg-red-500/20 text-white p-2 rounded-full border border-slate-700">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="relative bg-slate-900/90 rounded-[2rem] border border-slate-700/50 backdrop-blur-xl w-full max-w-5xl max-h-[90vh] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col">
+                    
+                    <button onclick="escondeVerMais(false)" class="absolute right-6 top-6 z-10 bg-slate-800/50 hover:bg-red-500/20 text-slate-400 hover:text-red-500 p-2 rounded-full border border-slate-700 transition-all duration-300"> 
+                        <i class="fa-solid fa-xmark text-xl"></i> 
+                    </button>
+
+                    <div id="headerVerMais" class="flex gap-4 items-center p-6 border-b border-slate-700/50 bg-slate-800/30">
+                        <h2 id="verMaisTituloProjeto" class="text-2xl text-slate-200 font-bold tracking-tight">título</h2>
+                        <button id="btnVerProjeto" onclick="verProjeto()" class="px-6 py-2 bg-cyan-500 text-slate-950 font-bold rounded-xl shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+                            PROJETO
+                        </button>
+                        <button id="btnVerImagens" onclick="verImagens()" class="px-6 py-2 bg-slate-700/50 text-slate-300  font-bold rounded-xl border border-slate-600 transition-all">
+                            IMAGENS
+                        </button>
+                    </div>
+
+                    <div id="slider" class="overflow-y-auto custom-scrollbar p-8 md:p-12 flex justify-between w-[200%] transition-all duration-500">
+                        <div class="flex flex-col gap-12 text-white w-[100%] pe-10">
+
+                            <div class="flex flex-col gap-4 ">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center border border-yellow-500/20">
+                                        <i class="fa-regular fa-lightbulb text-yellow-500 text-xl"></i>
+                                    </div>
+                                    <h2 class="text-2xl font-bold tracking-tight">O que soluciona?</h2>
+                                </div>
+
+                                <div id="verMaisOQueSolucionaProjeto" class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
+                                    o que soluciona
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-4 ">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                                        <i class="fa-solid fa-terminal text-blue-400 text-xl"></i>
+                                    </div>
+                                    <h2 class="text-2xl font-bold tracking-tight">Conhecimentos aplicados</h2>
+                                </div>
+                                
+                                <div id="verMaisConhecimentosAplicadosProjeto" class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50 flex flex-col gap-4">
+                                    conhecimentos
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[100%] ps-10 flex flex-col items-center justify-center relative group">
+                            <div class="">
+                                <button onclick="verImagensGrande(true)" class="">
+                                    <i class="fa-solid hover:scale-105 transition-all  text-2xl text-white font-bold fa-expand"></i>
+                                </button>
+                            </div>
+                            <div class="relative w-full max-w-4xl overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-900/50 shadow-2xl">
+                                <div id="image-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
+                                    
+                                </div>
+
+                                <button onclick="moveSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-cyan-500 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 border border-slate-700">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button onclick="moveSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-cyan-500 text-white p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 border border-slate-700">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-800/30 border-t border-slate-700/50 flex justify-end gap-4">
+                        <a id="verMaisLinkGitHubProjeto" target="_blank" href="#" class="bg-white text-slate-900 px-6 py-2 rounded-xl font-bold hover:bg-cyan-400 transition-all">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section id="formacao" class="scroll-mt-[10vh] px-4 py-12 max-w-7xl mx-auto flex flex-col gap-8">
-    
+        <section id="formacao" class="scroll-mt-[10vh] max-w-7xl mx-auto flex flex-col gap-8 w-full">
             <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-900">Formação Acadêmica</h1>
-                <p class="text-gray-600 mt-2 text-lg">Minha base teórica e jornada de aprendizado.</p>
+                <h1 class="text-3xl md:text-4xl font-bold text-white">Formação Acadêmica</h1>
+                <p class="text-slate-400 mt-3 text-lg">Minha base teórica e jornada de aprendizado.</p>
             </div>
 
             <div class="flex justify-center">
-                
-                <div class="w-full max-w-3xl flex flex-col gap-4 border-2 border-black shadow-xl bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl relative overflow-hidden">
+                <div class="w-full max-w-4xl flex flex-col gap-4 bg-slate-800/40 backdrop-blur-md border border-slate-700/50 shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(34,211,238,0.1)] relative overflow-hidden group">
                     
-                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-cyan-500"></div>
+                    <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-cyan-400 to-blue-600 group-hover:w-2 transition-all duration-300"></div>
 
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pl-4 sm:pl-6">
                         <div>
-                            <div class="flex items-center">
-                                <h2 class="text-2xl font-bold text-gray-900">UNIFACEMA</h2>
-
-                                <div class="pl-4 sm:pl-6 mt-4 flex items-center gap-2 text-gray-500 text-sm font-semibold">
-                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <div class="flex items-center flex-wrap gap-4">
+                                <h2 class="text-2xl font-bold text-white">UNIFACEMA</h2>
+                                <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold bg-slate-900/50 px-3 py-1 rounded-full">
+                                    <svg class="w-4 h-4 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
-                                CAXIAS | MA
+                                    CAXIAS | MA
                                 </div>
                             </div>
-                            <p class="text-lg font-semibold text-cyan-700">Análise e Desenvolvimento de Sistemas</p>
-                            
+                            <p class="text-lg font-semibold text-cyan-400 mt-2">Análise e Desenvolvimento de Sistemas</p>
                         </div>
-                        <div class="bg-black text-white px-4 py-1.5 rounded-full text-sm font-bold whitespace-nowrap shadow-sm">
+                        <div class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-4 py-1.5 rounded-full text-sm font-bold whitespace-nowrap shadow-sm">
                             2025 - 2027 (Previsto)
                         </div>
                     </div>
 
-                    <div class="pl-4 sm:pl-6 mt-2">
-                        <p class="text-gray-700 leading-relaxed text-justify">
-                            Formação voltada para a construção de uma base sólida em lógica de programação, banco de dados, OOP e arquitetura de sistemas. Durante a graduação, tenho aplicado os conhecimentos acadêmicos diretamente na criação de projetos próprios, aprimorando continuamente minhas habilidades no desenvolvimento full-stack com o ecossistema <strong>Java</strong> e <strong>Angular</strong>.
+                    <div class="pl-4 sm:pl-6 mt-4">
+                        <p class="text-slate-300 leading-relaxed">
+                            Formação voltada para a construção de uma base sólida em lógica de programação, banco de dados, OOP e arquitetura de sistemas. Durante a graduação, tenho aplicado os conhecimentos acadêmicos diretamente na criação de projetos próprios, aprimorando continuamente minhas habilidades no desenvolvimento full-stack com o ecossistema <strong class="text-cyan-400 font-medium">Java</strong> e <strong class="text-cyan-400 font-medium">Angular</strong>.
                         </p>
                     </div>
-
-                   
-
                 </div>
             </div>
         </section>
 
-        <section id="contatos" class="scroll-mt-[20vh] px-4 py-16 max-w-7xl mx-auto">
-            <div class="border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white rounded-2xl p-8">
+        <section id="contatos" class="scroll-mt-[10vh] max-w-7xl mx-auto w-full mb-12">
+            <div class="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 shadow-2xl rounded-3xl p-8 lg:p-12">
                 
                 <div class="text-center mb-10">
-                    <h1 class="text-4xl font-bold text-gray-900">Meus contatos</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">Meus contatos</h1>
+                    <p class="text-slate-400 text-lg">Vamos conversar?</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    
-                    <a href="https://www.linkedin.com/in/italosantos-dev" target="_blank" 
-                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-300 group">
-                        <i class="fa-brands fa-linkedin text-4xl group-hover:text-blue-600"></i>
-                        <span class="font-bold text-sm uppercase tracking-wider">LinkedIn</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="https://www.linkedin.com/in/italosantos-dev" target="_blank" class="flex flex-col items-center justify-center gap-4 p-8 bg-slate-900/50 border border-slate-700/50 rounded-2xl hover:bg-blue-600/10 hover:border-blue-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                        <i class="fa-brands fa-linkedin text-5xl text-slate-400 group-hover:text-blue-500 transition-colors"></i>
+                        <span class="font-bold text-sm text-slate-300 group-hover:text-white uppercase tracking-wider transition-colors">LinkedIn</span>
                     </a>
 
-                    <a href="https://github.com/italosantos-dev" target="_blank" 
-                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300 group">
-                        <i class="fa-brands fa-github text-4xl group-hover:text-gray-700"></i>
-                        <span class="font-bold text-sm uppercase tracking-wider">GitHub</span>
+                    <a href="https://github.com/italosantos-dev" target="_blank" class="flex flex-col items-center justify-center gap-4 p-8 bg-slate-900/50 border border-slate-700/50 rounded-2xl hover:bg-white/5 hover:border-white/30 hover:-translate-y-2 transition-all duration-300 group">
+                        <i class="fa-brands fa-github text-5xl text-slate-400 group-hover:text-white transition-colors"></i>
+                        <span class="font-bold text-sm text-slate-300 group-hover:text-white uppercase tracking-wider transition-colors">GitHub</span>
                     </a>
 
-                    <a href="https://wa.me/99981587631" target="_blank" 
-                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-green-50 hover:-translate-y-1 transition-all duration-300 group">
-                        <i class="fa-brands fa-whatsapp text-4xl group-hover:text-green-500"></i>
-                        <span class="font-bold text-sm uppercase tracking-wider">WhatsApp</span>
+                    <a href="https://wa.me/99981587631" target="_blank" class="flex flex-col items-center justify-center gap-4 p-8 bg-slate-900/50 border border-slate-700/50 rounded-2xl hover:bg-green-500/10 hover:border-green-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                        <i class="fa-brands fa-whatsapp text-5xl text-slate-400 group-hover:text-green-500 transition-colors"></i>
+                        <span class="font-bold text-sm text-slate-300 group-hover:text-white uppercase tracking-wider transition-colors">WhatsApp</span>
                     </a>
 
-                    <a href="mailto:italosantoscont@gmail.com" 
-                    class="flex flex-col items-center justify-center gap-3 p-6 border-2 border-black rounded-xl hover:bg-cyan-50 hover:-translate-y-1 transition-all duration-300 group">
-                        <i class="fa-solid fa-envelope text-4xl group-hover:text-cyan-600"></i>
-                        <span class="font-bold text-sm uppercase tracking-wider">E-mail</span>
+                    <a href="mailto:italosantoscont@gmail.com" class="flex flex-col items-center justify-center gap-4 p-8 bg-slate-900/50 border border-slate-700/50 rounded-2xl hover:bg-cyan-500/10 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                        <i class="fa-solid fa-envelope text-5xl text-slate-400 group-hover:text-cyan-400 transition-colors"></i>
+                        <span class="font-bold text-sm text-slate-300 group-hover:text-white uppercase tracking-wider transition-colors">E-mail</span>
                     </a>
-
                 </div>
 
-                <div class="mt-12 text-center border-t-2 border-gray-100 pt-8">
-                    <p class="text-sm text-gray-500 font-medium italic">
-                        “Focado em entregar soluções robustas com Java & Angular.”
-                    </p>
-                </div>
             </div>
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
